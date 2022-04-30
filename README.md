@@ -1,3 +1,12 @@
+# Mejoras en el proyecto Crud React
+
+Se realizaron tres mejoras importantes al proyecto de Crud con react, las cuales se explican en el video del enlace:
+
+[Video Explicación mejoras](https://youtu.be/5UEVA8cfB94 "Video Youtube")
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

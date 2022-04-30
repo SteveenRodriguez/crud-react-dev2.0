@@ -21,8 +21,6 @@ const EditUserForm = (props) => {
         event.target.reset();
     }
 
-
-
     return ( 
         <form onSubmit={handleSubmit(onSubmit)}>
             <label>Name</label>

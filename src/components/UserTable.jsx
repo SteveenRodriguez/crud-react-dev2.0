@@ -1,4 +1,5 @@
 import React from 'react';
+import { FcReadingEbook, FcWorkflow,FcSurvey,FcRight } from "react-icons/fc";
 
 const UserTable = (props) => {
 
@@ -8,9 +9,9 @@ const UserTable = (props) => {
         <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Username</th>
-            <th>Actions</th>
+            <th> <FcReadingEbook/> Name</th>
+            <th> <FcWorkflow/> Username</th>
+            <th> <FcSurvey/> Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -18,18 +19,18 @@ const UserTable = (props) => {
                 props.users.length > 0 ?
                 props.users.map(user=>(
                     <tr key={user.id}>
-                        <td>{user.name}</td>
+                        <td> <FcRight/> {user.name}</td>
                         <td>{user.username}</td>
                         <td>
                         <button 
-                            className="button muted-button"
+                            className="btn btn-info"
                             onClick={()=>{props.editRow(user)}}
                         >
                             Edit
                         </button>
                         <button 
-                            className="button muted-button"
-                            onClick={() => {props.deleteUser(user.id)}}    
+                            className="btn btn-danger"
+                            onClick={() => {props.deleteUser(user.id)}}     
                         >
                             Delete
                         </button>

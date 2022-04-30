@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { FcReadingEbook, FcWorkflow } from "react-icons/fc";
 
 const AddUserForm = (props) => {
 
@@ -13,11 +14,9 @@ const AddUserForm = (props) => {
         event.target.reset()
     }
 
-
-
     return ( 
         <form onSubmit={handleSubmit(onSubmit)}>
-            <label>Name</label>
+            <label> <FcReadingEbook/> Name</label>
             <input type="text" name="name" ref={register}
                 {...register('name', {required:true, message:'Campo Requerido'})} 
             />
@@ -25,7 +24,7 @@ const AddUserForm = (props) => {
                 {errors?.name?.message}
             </div>
 
-            <label>Username</label>
+            <label> <FcWorkflow/> Username</label>
             <input type="text" name="username" ref={register}
                 {...register('username', {required:true, message:'Campo Requerido'})}
             />
